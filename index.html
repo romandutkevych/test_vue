@@ -26,30 +26,6 @@
                             {{button}}
                         </p>
                     </div>
-                    <!--<div class="cb-step cb-step&#45;&#45;current" data-step="cb-item1" id="cb-step1" >-->
-                        <!--<p>-->
-                            <!--<span>1</span>-->
-                            <!--Изображение-->
-                        <!--</p>-->
-                    <!--</div>-->
-                    <!--<div class="cb-step" data-step="cb-item2" id="cb-step2">-->
-                        <!--<p>-->
-                            <!--<span>2</span>-->
-                            <!--Рама-->
-                        <!--</p>-->
-                    <!--</div>-->
-                    <!--<div class="cb-step" data-step="cb-item3" id="cb-step3">-->
-                        <!--<p>-->
-                            <!--<span>3</span>-->
-                            <!--Заголовок-->
-                        <!--</p>-->
-                    <!--</div>-->
-                    <!--<div class="cb-step" data-step="cb-item4" id="cb-step4">-->
-                        <!--<p>-->
-                            <!--<span>4</span>-->
-                            <!--Цвет отпечатков-->
-                        <!--</p>-->
-                    <!--</div>-->
                 </div>
                 <div class="cb-result">
                     <div class="cb-result__title">
@@ -119,16 +95,12 @@
                                 v-on:change-font="changefont"
                                 v-on:change-mark="chagemarks"
                         ></component>
-                        <!--<cb-item-0></cb-item-0>-->
-                        <!--<cb-item-1></cb-item-1>-->
-                        <!--<cb-item-2></cb-item-2>-->
-                        <!--<cb-item-3></cb-item-3>-->
                     </div>
                 </div>
                 <div class="cb-bottom-line">
                     <div class="cb-total">
                         <span class="cb-total__text">Стоимость:</span><span class="cb-total__amount" :changemarks="changemarks"
-                        v-if="changemarks.length<2"> 550</span>
+                        v-if="changemarks.length<3"> 550</span>
                         <span class="cb-total__amount" :changemarks="changemarks"
                               v-else>{{changemarks.length*10 + 550}}</span>
                         <span class="cb-total__currency"> грн</span>

@@ -22,51 +22,6 @@ Vue.component('cb-item-0', {
                                     <img v-bind:src="picture.imageLink" v-bind:title="picture.name" v-bind:alt="picture.name"  width="176"
                                          height="220">
                                 </div>
-
-                                <!--<div class="cb-item-pic">-->
-                                    <!--<img src="./img/pics/01.jpg" alt="Картинка №1" title="Картинка №1" width="176"-->
-                                         <!--height="220">-->
-                                <!--</div>-->
-                                <!--<div class="cb-item-pic">-->
-                                    <!--<img src="./img/pics/02.jpg" alt="Картинка №2" title="Картинка №2" width="176"-->
-                                         <!--height="220">-->
-                                <!--</div>-->
-                                <!--<div class="cb-item-pic">-->
-                                    <!--<img src="./img/pics/03.jpg" alt="Картинка №3" title="Картинка №3" width="176"-->
-                                         <!--height="220">-->
-                                <!--</div>-->
-                                <!--<div class="cb-item-pic">-->
-                                    <!--<img src="./img/pics/04.jpg" alt="Картинка №4" title="Картинка №4" width="176"-->
-                                         <!--height="220">-->
-                                <!--</div>-->
-                                <!--<div class="cb-item-pic">-->
-                                    <!--<img src="./img/pics/05.jpg" alt="Картинка №5" title="Картинка №5" width="176"-->
-                                         <!--height="220">-->
-                                <!--</div>-->
-                                <!--<div class="cb-item-pic">-->
-                                    <!--<img src="./img/pics/06.jpg" alt="Картинка №6" title="Картинка №6" width="176"-->
-                                         <!--height="220">-->
-                                <!--</div>-->
-                                <!--<div class="cb-item-pic">-->
-                                    <!--<img src="./img/pics/07.jpg" alt="Картинка №7" title="Картинка №7" width="176"-->
-                                         <!--height="220">-->
-                                <!--</div>-->
-                                <!--<div class="cb-item-pic">-->
-                                    <!--<img src="./img/pics/08.jpg" alt="Картинка №8" title="Картинка №8" width="176"-->
-                                         <!--height="220">-->
-                                <!--</div>-->
-                                <!--<div class="cb-item-pic">-->
-                                    <!--<img src="./img/pics/09.jpg" alt="Картинка №9" title="Картинка №9" width="176"-->
-                                         <!--height="220">-->
-                                <!--</div>-->
-                                <!--<div class="cb-item-pic">-->
-                                    <!--<img src="./img/pics/10.jpg" alt="Картинка №10" title="Картинка №10" width="176"-->
-                                         <!--height="220">-->
-                                <!--</div>-->
-                                <!--<div class="cb-item-pic">-->
-                                    <!--<img src="./img/pics/11.jpg" alt="Картинка №11" title="Картинка №11" width="176"-->
-                                         <!--height="220">-->
-                                <!--</div>-->
                             </div>
                         </div>`,
     methods:{
@@ -95,111 +50,6 @@ Vue.component('cb-item-1', {
                                     <img v-bind:src="border.imageLink" v-bind:title="border.name" v-bind:alt="border.name"  width="176"
                                          height="220">
                                 </div>
-                                <!--<div class="cb-item-border">-->
-                                    <!--<img src="./img/borders/rama-01.png" alt="Багетная №1" title="Багетная №1"-->
-                                         <!--width="120" height="150">-->
-
-                                <!--</div>-->
-                                <!--<div class="cb-item-border">-->
-                                    <!--<img src="./img/borders/rama-02.png" alt="Багетная №2" title="Багетная №2"-->
-                                         <!--width="120" height="150">-->
-
-                                <!--</div>-->
-                                <!--<div class="cb-item-border">-->
-                                    <!--<img src="./img/borders/rama-03.png" alt="Багетная №3" title="Багетная №3"-->
-                                         <!--width="120" height="150">-->
-                                    <!--<a class="cb-item-border__prev fancybox gallery"-->
-                                                            <!--href="./img/borders/prev.03.jpg" title="Багетная №3"-->
-                                                            <!--rel="gal-2"></a><a-->
-                                        <!--class="cb-item-border__prev fancybox gallery" href="./img/borders/prev.03.1.jpg"-->
-                                        <!--title="Багетная №3" rel="gal-2"></a><a-->
-                                        <!--class="cb-item-border__prev fancybox gallery" href="./img/borders/prev.03.2.jpg"-->
-                                        <!--title="Багетная №3" rel="gal-2"></a>-->
-                                <!--</div>-->
-                                <!--<div class="cb-item-border">-->
-                                    <!--<img src="./img/borders/rama-04.png" alt="Багетная №4" title="Багетная №4"-->
-                                         <!--width="120" height="150">-->
-                                    <!--<a class="cb-item-border__prev fancybox gallery"-->
-                                                            <!--href="./img/borders/prev.04.jpg" title="Багетная №4"-->
-                                                            <!--rel="gal-3"></a>-->
-                                <!--</div>-->
-                                <!--<div class="cb-item-border">-->
-                                    <!--<img src="./img/borders/rama-05.png" alt="Багетная №5" title="Багетная №5"-->
-                                         <!--width="120" height="150">-->
-                                    <!--<a class="cb-item-border__prev fancybox gallery"-->
-                                                            <!--href="./img/borders/prev.05.jpg" title="Багетная №5"-->
-                                                            <!--rel="gal-4"></a>-->
-                                <!--</div>-->
-                                <!--<div class="cb-item-border">-->
-                                    <!--<img src="./img/borders/rama-06.png" alt="Багетная №6" title="Багетная №6"-->
-                                         <!--width="120" height="150">-->
-                                    <!--<a class="cb-item-border__prev fancybox gallery"-->
-                                                            <!--href="./img/borders/prev.06.jpg" title="Багетная №6"-->
-                                                            <!--rel="gal-5"></a>-->
-                                <!--</div>-->
-                                <!--<div class="cb-item-border">-->
-                                    <!--<img src="./img/borders/rama-07.png" alt="Багетная №7" title="Багетная №7"-->
-                                         <!--width="120" height="150">-->
-                                    <!--<a class="cb-item-border__prev fancybox gallery"-->
-                                                            <!--href="./img/borders/prev.07.jpg" title="Багетная №7"-->
-                                                            <!--rel="gal-6"></a>-->
-                                <!--</div>-->
-                                <!--<div class="cb-item-border">-->
-                                    <!--<img src="./img/borders/rama-08.png" alt="Багетная №8" title="Багетная №8"-->
-                                         <!--width="120" height="150">-->
-                                    <!--<a class="cb-item-border__prev fancybox gallery"-->
-                                                            <!--href="./img/borders/prev.08.jpg" title="Багетная №8"-->
-                                                            <!--rel="gal-7"></a>-->
-                                <!--</div>-->
-                                <!--<div class="cb-item-border">-->
-                                    <!--<img src="./img/borders/rama-09.png" alt="Багетная №9" title="Багетная №9"-->
-                                         <!--width="120" height="150">-->
-                                    <!--<a class="cb-item-border__prev fancybox gallery"-->
-                                                            <!--href="./img/borders/prev.09.jpg" title="Багетная №9"-->
-                                                            <!--rel="gal-8"></a>-->
-                                <!--</div>-->
-                                <!--<div class="cb-item-border">-->
-                                    <!--<img src="./img/borders/rama-10.png" alt="Багетная №10" title="Багетная №10"-->
-                                         <!--width="120" height="150">-->
-                                    <!--<a class="cb-item-border__prev fancybox gallery"-->
-                                                            <!--href="./img/borders/prev.10.jpg" title="Багетная №10"-->
-                                                            <!--rel="gal-9"></a>-->
-                                <!--</div>-->
-                                <!--<div class="cb-item-border">-->
-                                    <!--<img src="./img/borders/rama-11.png" alt="Багетная №11" title="Багетная №11"-->
-                                         <!--width="120" height="150">-->
-                                    <!--<a class="cb-item-border__prev fancybox gallery"-->
-                                                            <!--href="./img/borders/prev.11.jpg" title="Багетная №11"-->
-                                                            <!--rel="gal-10"></a>-->
-                                <!--</div>-->
-                                <!--<div class="cb-item-border">-->
-                                    <!--<img src="./img/borders/rama-12.png" alt="Багетная №12" title="Багетная №12"-->
-                                         <!--width="120" height="150">-->
-                                    <!--<a class="cb-item-border__prev fancybox gallery"-->
-                                                            <!--href="./img/borders/prev.12.jpg" title="Багетная №12"-->
-                                                            <!--rel="gal-11"></a>-->
-                                <!--</div>-->
-                                <!--<div class="cb-item-border">-->
-                                    <!--<img src="./img/borders/rama-13.png" alt="Багетная №13" title="Багетная №13"-->
-                                         <!--width="120" height="150">-->
-                                    <!--<a class="cb-item-border__prev fancybox gallery"-->
-                                                            <!--href="./img/borders/prev.13.jpg" title="Багетная №13"-->
-                                                            <!--rel="gal-12"></a>-->
-                                <!--</div>-->
-                                <!--<div class="cb-item-border">-->
-                                    <!--<img src="./img/borders/rama-14.png" alt="Багетная №14" title="Багетная №14"-->
-                                         <!--width="120" height="150">-->
-                                    <!--<a class="cb-item-border__prev fancybox gallery"-->
-                                                            <!--href="./img/borders/prev.14.jpg" title="Багетная №14"-->
-                                                            <!--rel="gal-13"></a>-->
-                                <!--</div>-->
-                                <!--<div class="cb-item-border">-->
-                                    <!--<img src="./img/borders/rama-15.png" alt="Багетная №15" title="Багетная №15"-->
-                                         <!--width="120" height="150">-->
-                                    <!--<a class="cb-item-border__prev fancybox gallery"-->
-                                                            <!--href="./img/borders/prev.15.jpg" title="Багетная №15"-->
-                                                            <!--rel="gal-14"></a>-->
-                                <!--</div>-->
                             </div>
                         </div>`,
     methods:{
@@ -256,15 +106,6 @@ Vue.component('cb-item-2', {
                                             v-bind:id="font.toLowerCase()"
                                             @click="changeFont(index,font)">
                                     {{font}}</span>
-									<!--<span id="ariston" class="btn-font btn-font&#45;&#45;active">-->
-										<!--Ariston-->
-									<!--</span>-->
-                                <!--<span id="davinci" class="btn-font">-->
-										<!--DaVinci-->
-									<!--</span>-->
-                                <!--<span id="brody" class="btn-font">-->
-										<!--Brody-->
-									<!--</span>-->
                             </div>
                         </div>`,
     methods:{
@@ -312,56 +153,6 @@ Vue.component('cb-item-3', {
                                     <label v-bind:for="mark.id" v-bind:title="mark.name"></label>
                                     <img v-bind:src="mark.imageLink" v-bind:alt="mark.name" width="136" height="136">
                                 </div>
-                                <!--<div class="cb-item-mark">-->
-                                    <!--<input id="mark0" type="checkbox">-->
-                                    <!--<label for="mark0" title="BahamaBlue"></label>-->
-                                    <!--<img src="./img/marks/BahamaBlue.jpg" alt="BahamaBlue" width="136" height="136">-->
-                                <!--</div>-->
-                                <!--<div class="cb-item-mark">-->
-                                    <!--<input id="mark1" type="checkbox">-->
-                                    <!--<label for="mark1" title="BambooLeaves"></label>-->
-                                    <!--<img src="./img/marks/BambooLeaves.jpg" alt="BambooLeaves" width="136" height="136">-->
-                                <!--</div>-->
-                                <!--<div class="cb-item-mark">-->
-                                    <!--<input id="mark2" type="checkbox">-->
-                                    <!--<label for="mark2" title="LilacPosies"></label>-->
-                                    <!--<img src="./img/marks/LilacPosies.jpg" alt="LilacPosies" width="136" height="136">-->
-                                <!--</div>-->
-                                <!--<div class="cb-item-mark">-->
-                                    <!--<input id="mark3" type="checkbox">-->
-                                    <!--<label for="mark3" title="PearTart"></label>-->
-                                    <!--<img src="./img/marks/PearTart.jpg" alt="PearTart" width="136" height="136">-->
-                                <!--</div>-->
-                                <!--<div class="cb-item-mark">-->
-                                    <!--<input id="mark4" type="checkbox">-->
-                                    <!--<label for="mark4" title="RhubarbStalk"></label>-->
-                                    <!--<img src="./img/marks/RhubarbStalk.jpg" alt="RhubarbStalk" width="136" height="136">-->
-                                <!--</div>-->
-                                <!--<div class="cb-item-mark">-->
-                                    <!--<input id="mark5" type="checkbox">-->
-                                    <!--<label for="mark5" title="Tangelo"></label>-->
-                                    <!--<img src="./img/marks/Tangelo.jpg" alt="Tangelo" width="136" height="136">-->
-                                <!--</div>-->
-                                <!--<div class="cb-item-mark">-->
-                                    <!--<input id="mark6" type="checkbox">-->
-                                    <!--<label for="mark6" title="CottageIvy"></label>-->
-                                    <!--<img src="./img/marks/CottageIvy.jpg" alt="CottageIvy" width="136" height="136">-->
-                                <!--</div>-->
-                                <!--<div class="cb-item-mark">-->
-                                    <!--<input id="mark7" type="checkbox">-->
-                                    <!--<label for="mark7" title="PearTart"></label>-->
-                                    <!--<img src="./img/marks/PearTart.jpg" alt="PearTart" width="136" height="136">-->
-                                <!--</div>-->
-                                <!--<div class="cb-item-mark">-->
-                                    <!--<input id="mark8" type="checkbox">-->
-                                    <!--<label for="mark8" title="BahamaBlue"></label>-->
-                                    <!--<img src="./img/marks/BahamaBlue.jpg" alt="BahamaBlue" width="136" height="136">-->
-                                <!--</div>-->
-                                <!--<div class="cb-item-mark">-->
-                                    <!--<input id="mark9" type="checkbox">-->
-                                    <!--<label for="mark9" title="PottersClay"></label>-->
-                                    <!--<img src="./img/marks/PottersClay.jpg" alt="PottersClay" width="136" height="136">-->
-                                <!--</div>-->
                             </div>
                         </div>`,
     methods:{
@@ -632,8 +423,6 @@ new Vue({
         },
         chantext:function (val) {
             this.picturetext= val;
-            // this.picturetext.name = n_text.name;
-            // this.picturetext.date = n_text.date;
 
             console.log(this.picturetext.date, this.picturetext.title, this.picturetext.name);
         },
@@ -643,7 +432,6 @@ new Vue({
             console.log(this.picturefont.font);
         },
         chagemarks:function (index) {
-            // this.marks[index].chacked = !this.marks[index].chacked;
 
             if (this.marks[index].chacked == true) {
                 this.changemarks.push(this.marks[index]);
@@ -654,9 +442,6 @@ new Vue({
             this.calk = this.calk+1;
             console.log(this.calk);
         }
-            // this.changemarks.checked = !this.changemarks.checked;
-            // console.log(this.changemarks[index].name);
-            // this.changemarks.checked = this.changemarks.checked;
 
     },
     computed: {
