@@ -405,43 +405,70 @@ new Vue({
         },
         fonts:['Ariston','DaVinci','Brody'],
         changemarks:[],
-        calk:0
+        calk:0,
+        sendData:{
+            picture:'',
+            border:'',
+            title:'',
+            name:'',
+            date:'',
+            font:'',
+            marks:[]
+        },
+        errors:[]
     },
     methods:{
         takepict: function(index){
             this.pictureitem.itemlink = this.pictures[index].imageLink;
             this.pictureitem.itemname = this.pictures[index].name;
+            this.sendData.picture = this.pictureitem.itemname;
             this.calk = this.calk+1;
-            console.log(this.pictureitem);
+            console.log(this.sendData.picture);
             console.log(this.calk);
         },
         takebord:function (index) {
             this.borderitem.itemlink = this.borders[index].imageLink;
             this.borderitem.itemname = this.borders[index].name;
+            this.sendData.border = this.borderitem.itemname;
             this.calk = this.calk+1;
             console.log(this.calk);
         },
         chantext:function (val) {
             this.picturetext= val;
-
+            this.sendData.title = this.picturetext.title;
+            this.sendData.name = this.picturetext.name;
+            this.sendData.date = this.picturetext.date;
             console.log(this.picturetext.date, this.picturetext.title, this.picturetext.name);
         },
         changefont:function (font) {
             this.picturefont.font = font;
-
+            this.sendData.font = this.picturefont.font;
             console.log(this.picturefont.font);
         },
         chagemarks:function (index) {
 
             if (this.marks[index].chacked == true) {
                 this.changemarks.push(this.marks[index]);
-
+                this.sendData.marks.push(this.marks[index]);
+                this.calk = this.calk+1;
             } else{
                this.changemarks.splice(this.changemarks.num,1);
+               this.sendData.marks.splice(this.sendData.marks.num,1);
+                this.calk = this.calk-1;
             }
-            this.calk = this.calk+1;
+
             console.log(this.calk);
+        },
+        readysendData(){
+            console.log(this.sendData.picture);
+            const str = JSON.stringify(this.sendData);
+            axios.post(`https://jsonplaceholder.typicode.com/posts`,str)
+                .then(response=>{})
+                .catch(e=>{
+                    this.errors.push(e);
+                })
         }
+
 
     },
     computed: {
