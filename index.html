@@ -1,0 +1,149 @@
+<html class="" lang="en">﷐
+<head>
+    <meta charset="UTF-8">
+    <title>Конструктор</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/prefix-free.styl">
+
+</head>
+
+<body class="constructor-page">
+
+<main>
+    <div id="app">
+        <div class="container_12">
+            <div class="grid_12">
+            <div id="constructor" class="constructor-block">
+                <div class="cb-top-line">
+                    <div
+                            v-for="(button,index) in buttons"
+                            v-bind:class="['cb-step', { current: currentButton === index }]"
+                            v-bind:data-step="'cb-item'+index"
+                            v-bind:id="'cb-step'+index"
+                            v-on:click="currentButton=index">
+                        <p>
+                            <span>{{index+1}}</span>
+                            {{button}}
+                        </p>
+                    </div>
+                    <!--<div class="cb-step cb-step&#45;&#45;current" data-step="cb-item1" id="cb-step1" >-->
+                        <!--<p>-->
+                            <!--<span>1</span>-->
+                            <!--Изображение-->
+                        <!--</p>-->
+                    <!--</div>-->
+                    <!--<div class="cb-step" data-step="cb-item2" id="cb-step2">-->
+                        <!--<p>-->
+                            <!--<span>2</span>-->
+                            <!--Рама-->
+                        <!--</p>-->
+                    <!--</div>-->
+                    <!--<div class="cb-step" data-step="cb-item3" id="cb-step3">-->
+                        <!--<p>-->
+                            <!--<span>3</span>-->
+                            <!--Заголовок-->
+                        <!--</p>-->
+                    <!--</div>-->
+                    <!--<div class="cb-step" data-step="cb-item4" id="cb-step4">-->
+                        <!--<p>-->
+                            <!--<span>4</span>-->
+                            <!--Цвет отпечатков-->
+                        <!--</p>-->
+                    <!--</div>-->
+                </div>
+                <div class="cb-result">
+                    <div class="cb-result__title">
+                        <p>Ваша картина</p>
+                    </div>
+                    <div class="cb-result__content">
+                        <p class="cb-result__data">
+                            <span>Изображение:</span>
+                            <strong></strong>
+                            <strong :pictureitem="pictureitem">{{pictureitem.itemname}}</strong>
+                        </p>
+                        <p class="cb-result__data">
+                            <span>Рама:</span>
+                            <strong></strong>
+                            <strong :borderitem="borderitem">{{borderitem.itemname}}</strong>
+                        </p>
+                        <div class="cb-result__data">
+                            <span>Отпечатки:</span>
+                            <strong>
+                                <div :changemarks="changemarks"
+                                     v-if="changemarks == ''">Не выбрано</div>
+                                <div v-else
+                                     :changemarks="changemarks"
+                                     :marks="marks"
+                                     v-for="chanchemark in changemarks"
+                                     v-bind:title="chanchemark.name"
+                                     v-bind:class="'marks_item'"
+                                     v-bind:style="{ background: chanchemark.color }"></div>
+                            </strong>
+
+                        </div>
+                        <div class="cb-result__object">
+                            <div class="cb-result__img">
+                                <img :pictureitem="pictureitem" v-bind:src="pictureitem.itemlink"  width="176" height="220">
+                            </div>
+                            <div class="cb-result__border">
+                                <img :borderitem="borderitem" v-bind:src="borderitem.itemlink"  width="176" height="220">
+                            </div>
+                            <p :picturetext="picturetext" :picturefont="picturefont" v-bind:class="['cb-result__text__title', picturefont.font.toLowerCase()]">{{picturetext.title}}</p>
+                            <p :picturetext="picturetext" :picturefont="picturefont" v-bind:class="['cb-result__text__name', picturefont.font.toLowerCase()]">{{picturetext.name}}</p>
+                            <p :picturetext="picturetext" :picturefont="picturefont" v-bind:class="['cb-result__text__date', picturefont.font.toLowerCase()]">{{picturetext.date}}</p>
+                        </div>
+                    </div>
+                    <div class="cb-result__bottom">
+                        <form action="" method="POST">
+                            <p class="cb-next" :calk="calk" v-if="calk<3"  v-on:click="currentButton=currentButton+1" >Далее</p>
+                            <p class="cb-next" :calk="calk" v-else>В КОРЗИНУ</p>
+                            <input name="result" id="" type="text" hidden="">
+                        </form>
+                    </div>
+                </div>
+                <div class="cb-wrapper">
+                    <div id="cb-items" class="cb-item1">
+                        <component
+                                v-bind:is="currentComponent"
+                                v-bind:is="readyForSent"
+                                :pictures="pictures"
+                                :borders="borders"
+                                :picturetext="picturetext"
+                                :marks="marks"
+                                :fonts="fonts"
+                                :changemarks="changemarks"
+                                class="current-cb-item"
+                                @take-pict="takepict"
+                                @take-border="takebord"
+                                v-on:change-txt="chantext"
+                                v-on:change-font="changefont"
+                                v-on:change-mark="chagemarks"
+                        ></component>
+                        <!--<cb-item-0></cb-item-0>-->
+                        <!--<cb-item-1></cb-item-1>-->
+                        <!--<cb-item-2></cb-item-2>-->
+                        <!--<cb-item-3></cb-item-3>-->
+                    </div>
+                </div>
+                <div class="cb-bottom-line">
+                    <div class="cb-total">
+                        <span class="cb-total__text">Стоимость:</span><span class="cb-total__amount" :changemarks="changemarks"
+                        v-if="changemarks.length<2"> 550</span>
+                        <span class="cb-total__amount" :changemarks="changemarks"
+                              v-else>{{changemarks.length*10 + 550}}</span>
+                        <span class="cb-total__currency"> грн</span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+﷯
+</html>
